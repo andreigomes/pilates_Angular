@@ -1,0 +1,37 @@
+import { Product } from './../product.model';
+import { Router } from '@angular/router';
+import { ProductService } from './../product.service';
+import { Component, OnInit } from '@angular/core';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
+import { formatCurrency } from '@angular/common';
+
+@Component({
+  selector: 'app-product-create',
+  templateUrl: './product-create.component.html',
+  styleUrls: ['./product-create.component.css']
+})
+export class ProductCreateComponent implements OnInit {
+  product: Product = {
+    name: "",
+    price: null
+  }
+
+  constructor(
+      private productService: ProductService,
+      private router: Router) { }
+
+  ngOnInit(): void {
+  }
+
+  createProduct(): void {
+    this.productService.create(this.product).subscribe(() => {
+      this.productService.showMessage("Produto salvo com sucesso!");
+      this.router.navigate(['/products']);  
+    });
+  }
+
+  cancelProduct(): void {
+    this.router.navigate(['/products']);
+  }
+
+}

@@ -1,0 +1,64 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneta BIC Preta",
+      "price": 5.89
+    },
+    {
+      "id": 2,
+      "name": "Caneta BIC Azul",
+      "price": 5.89
+    },
+    {
+      "id": 3,
+      "name": "Caneta BIC Vermelha",
+      "price": 5.89
+    },
+    {
+      "name": "Waffle",
+      "price": 125.3,
+      "id": 4
+    },
+    {
+      "name": "Waffle",
+      "price": 125.3,
+      "id": 5
+    },
+    {
+      "name": "biscoito",
+      "price": "10.30",
+      "id": 6
+    },
+    {
+      "name": "chá mate",
+      "price": "20",
+      "id": 7
+    },
+    {
+      "name": "chá hibisco",
+      "price": 15.99,
+      "id": 8
+    },
+    {
+      "name": "cha cidreira",
+      "price": "11",
+      "id": 9
+    },
+    {
+      "name": "cha madeira",
+      "price": "10.99",
+      "id": 10
+    },
+    {
+      "name": "AAAAA",
+      "price": "30",
+      "id": 11
+    },
+    {
+      "name": "TESTE",
+      "price": 1.3,
+      "id": 12
+    }
+  ]
+}
